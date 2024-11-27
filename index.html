@@ -20,28 +20,44 @@
 
     <!-- NAVBAR -->
     <div class="navbar-container">
-        <nav class="navbar">
-            <!-- Sol Taraf: Menü -->
-            <ul class="menu">
-                <li><a href="#" class="menu-link">Ana Sayfa</a></li>
-                <li><a href="#alt-kisim" class="menu-link">Hakkımızda</a></li>
-                <li><a href="#alt-kisim2" class="menu-link">İletişim</a></li>
-                <li><a href="#" class="menu-link">Menu</a></li>
-            </ul>
-    
-            <!-- Ortada Logo -->
-            <a href="#" class="logo">
-                <img src="./img/logo.png" alt="Logo">
-            </a>
-    
-            <!-- Sağ Taraf: İkonlar -->
-            <div class="icons">
-                <a href="https://www.google.com.tr/search?sa=X&sca_esv=3133dcedd35e4ac7&tbm=lcl&sxsrf=ADLYWIJVIzmcHStbajDKjyn3mLeX31cBRQ:1732663623221&q=Guido%E2%80%99s+Te%C5%9Fvikiye+Yorumlar&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2MTIzMDGyNDI1NjIyMTM1NzUz28DI-IpR1r00MyX_UcPMYoWQ1KPzyzKzMytTFSLzi0pzcxKLFrHilwcAuHNFB1oAAAA&rldimm=4260429253224657566&hl=tr-TR&ved=2ahUKEwiT0Jv-kvuJAxXtQvEDHVJoBI8Q9fQKegQINxAF&biw=1920&bih=911&dpr=1#lkt=LocalPoiReviews"><i class="fa-regular fa-comment"></i></a>
-                <a href="https://www.instagram.com/guidostesvikiye/"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-        </nav>
-        
-    </div>
+      <nav class="navbar">
+          <!-- Sol Taraf: Menü -->
+          <ul class="menu">
+              <li><a href="#" class="menu-link">Ana Sayfa</a></li>
+              <li><a href="#alt-kisim" class="menu-link">Hakkımızda</a></li>
+              <li><a href="#alt-kisim2" class="menu-link">İletişim</a></li>
+              <li><a href="#" class="menu-link">Menu</a></li>
+          </ul>
+  
+          <!-- Ortada Logo -->
+          <a href="#" class="logo">
+              <img src="./img/logo.png" alt="Logo">
+          </a>
+  
+          <!-- Sağ Taraf: İkonlar -->
+          <div class="icons">
+              <a href="#"><i class="fa-regular fa-comment"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+  
+          <!-- Hamburger Menü -->
+          <div class="hamburger-menu" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+      </nav>
+  
+      <!-- Mobil Menü -->
+      <div class="mobile-menu hidden">
+          <ul>
+              <li><a href="#">Ana Sayfa</a></li>
+              <li><a href="#alt-kisim">Hakkımızda</a></li>
+              <li><a href="#alt-kisim2">İletişim</a></li>
+              <li><a href="#">Menu</a></li>
+          </ul>
+      </div>
+  </div>
     <!-- NAVBAR END -->
    
     <!-- CAROUSEL -->
@@ -200,7 +216,7 @@
           <!-- İletişim Bölümü -->
           <div class="contact-section">
             <h2 class="footer-title">İletişim</h2>
-            <p><strong>Telefon:</strong> <a href="tel:949-709-1561">949-709-1561</a></p>
+            <p><strong>Telefon:</strong> <a href="tel:(0212) 233 54 25">(0212) 233 54 25</a></p>
             <p><strong>Email:</strong> <a href="mailto:info@example.com" class="email-link">info@example.com</a></p>
             <div class="social-icons">
               <a href="#" aria-label="Yorum"><i class="fa-regular fa-comment"></i></a>
@@ -210,7 +226,7 @@
       
           <!-- İş İlanları Bölümü -->
           <div class="jobs-section">
-            <h2 class="footer-title">İş İlanları</h2>
+            <h2 class="footer-title">Bizimle Çalışmak ister misiniz?</h2>
             <p>Ekibimize katılmak ister misiniz?</p>
             <button href="#" class="custom-button">İlanları Gör</button>
           </div>

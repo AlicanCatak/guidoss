@@ -199,3 +199,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(document.querySelector(".carousel5"));
 });
+
+
+function toggleMenu() {
+  const mobileMenu = document.querySelector('.mobile-menu');
+  mobileMenu.classList.toggle('active');
+}
+

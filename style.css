@@ -12,9 +12,7 @@ body {
 /* Navbar */
 .navbar-container {
     background-color: #FBFBFB;
-    padding: 50px 30px;
-    margin-left: 23px;
-    margin-right: 30px;
+    padding: 50px;
     position: sticky;
     top: 0;
     z-index: 1000; /* Diğer öğelerin üstünde kalması için */
@@ -71,13 +69,11 @@ body {
 }
 
 .carousel {
-    margin-left: 30px;
-    margin-right: 30px;
+   padding: 0px 50px 0px 50px;
+   
 }
 
 .content {
-    margin-left: 30px;
-    margin-right: 30px;
     margin-top: 70px;
     display: flex;
     gap: 20px;
@@ -102,16 +98,14 @@ body {
     padding: 10px;
     border-bottom: #BF302E 10px solid; 
     font-family: "Parkinsans", sans-serif;
-    margin-left: 50px;
+    padding: 0px 50px 0px 50px;
     
 }
 
 .metin {
     font-size: 23px;
     margin-top: 10px;
-    margin-left: 50px;
-    margin-left: 50px;
-    padding: 10px;
+    padding: 0px 50px 0px 50px;
     font-family: "Dosis", sans-serif;
 }
 
@@ -145,13 +139,13 @@ body {
 
 /* Videoyu büyütmek ve şeffaf bir görünüm sağlamak */
 .video-gif {
-    width: 800px; /* Videonun genişliği */
-    height: 550px; /* Videonun yüksekliği */
-    border-radius: 20px; /* Köşeleri yuvarlatır (isteğe bağlı) */
-    box-shadow: none; /* Gölgeyi kaldırır */
-    background-color: transparent; /* Arka plan şeffaf */
-    object-fit: cover; /* Görüntüyü düzgün şekilde ölçekler */
-    margin-left: 50px;
+  width: 800px; /* Resmi küçültür */
+  height: 550px; /* Oranları korur */
+  border-radius: 20px; /* Köşeleri yuvarlatır (isteğe bağlı) */
+  box-shadow: none; /* Gölgeyi kaldırır */
+  background-color: transparent; /* Arka plan şeffaf */
+  object-fit: cover; /* Görüntüyü düzgün şekilde ölçekler */
+  
 }
 
 .carousel-item.active .video-giff {
@@ -159,8 +153,6 @@ body {
   height: 900px; /* Yükseklik otomatik */
   aspect-ratio: 16 / 9; /* Oran belirlenebilir */
   object-fit: cover; /* Görüntüyü düzgün şekilde ölçekler */
-  margin-left: 30px;
-  margin-right: 30px;
 }
 
 
@@ -178,8 +170,7 @@ body {
     font-size: 60px;
     padding: 10px;
     font-family: "Parkinsans", sans-serif;
-    margin-left: 50px;
-    margin-right: 50px;
+    padding: 0px 50px 0px 50px;
     
     
    
@@ -267,6 +258,7 @@ body {
   iframe{
     height: 500px;
     width: 700px;
+    
   }
 
   .fade-out {
@@ -297,8 +289,7 @@ body {
   font-weight: bold;
   margin-bottom: 20px;
   color: #333; /* Yazı rengi */
-  margin-left: 50px;
-  margin-right: 50px;
+  padding: 0px 50px 0px 50px;
 }
 
 .instagram-link {
@@ -399,7 +390,7 @@ body {
 }
 
 .social-icons a:hover {
-  color: black; /* Sarıya çalan bir ton */
+  color: #333; /* Sarıya çalan bir ton */
 }
 
 /* İş İlanları Butonu */
@@ -456,13 +447,10 @@ body {
   justify-content: space-between; /* İki kutu arasında eşit boşluk */
   align-items: center; /* Dikeyde ortala */
   min-height: 50vh; /* Daha küçük bir yükseklik */
-  margin: 0; /* Kenarlardan boşluğu kaldır */
-  padding: 0; /* İç boşlukları kaldır */
   overflow: hidden; /* İçe aktarımı kaldır */
   background-color: #BF302E; /* Kartın arka plan rengi */
   margin-top: 70px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-bottom: 70px;
 }
 
 #photo-gallery {
@@ -531,3 +519,193 @@ body {
   color: #FBFBFB;
   font-family: "Dosis", sans-serif;
 }
+
+
+/* responsive */
+
+/* Hamburger Menü */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #333;
+ 
+}
+
+/* Mobil Menü */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.mobile-menu ul li {
+  padding: 10px 20px;
+}
+
+.mobile-menu ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Gizleme Sınıfı */
+.hidden {
+  display: none;
+}
+
+/* Mobil Görünüm için Hamburger */
+@media screen and (max-width: 768px) {
+  .menu {
+      display: none;
+  }
+
+  .hamburger-menu {
+      display: flex;
+  }
+
+  .mobile-menu {
+      display: none;
+  }
+
+  .mobile-menu.active {
+      display: block;
+  }
+
+
+  .video-giff{
+    display: none;
+  }
+
+  .carousel .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel .content .hw,
+.carousel .content .text {
+    width: 100%;
+}
+
+/* İkinci Carousel için */
+.carousel .video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel .video-section .text-content,
+.carousel .video-section .video-content {
+    width: 100%;
+}
+
+/* Görsellerin ve videoların boyutlandırılması */
+.carousel .content .image,
+.carousel .video-section .video-gif {
+    width: 100%;
+    height: auto;
+}
+
+/* Metinlerin hizalanması */
+.carousel .text,
+.carousel .text-content {
+    text-align: center;
+    
+}
+
+
+.carousel5 {
+  display: flex;
+  flex-direction: column; /* Alt alta yerleştir */
+  align-items: center; /* Ortalamak için */
+}
+
+#photo-gallery {
+  width: 100%; /* Tam genişlik */
+  margin-bottom: 20px; /* Kart ile görseller arasında boşluk */
+  margin-right: 150px;
+  
+}
+
+#photo-gallery .photo img {
+  width: 100%; /* Görseller tam genişlik */
+  height: auto; /* Oran korunur */
+  
+  
+}
+
+.card {
+  width: 100%; /* Tam genişlik */
+  text-align: center; /* Metin ortalama */
+  padding: 20px; /* İç boşluk */
+}
+
+.poke-image,
+.poke-info {
+    display: none; /* Resim ve bilgi gizlenir */
+}
+
+.poke-map {
+    width: 100%; /* Harita tam genişlik */
+    display: block; /* Harita görünür */
+    margin: 0 auto;
+}
+
+.poke-map iframe {
+    width: 100%; /* Harita iframe tam genişlik */
+    height: 300px; /* Daha uygun bir yükseklik */
+}
+
+.footer-container {
+  display: flex;
+  padding: 0px 50px 0px 50px;
+  align-items: center; /* Merkezde hizala */
+  text-align: center; /* Metinleri ortala */
+  gap: 20px; /* Bölümler arasında boşluk */
+}
+
+.contact-section,
+.jobs-section {
+  width: 100%; /* Bölümler tam genişlik kaplasın */
+  padding: 10px; /* İçeriklere boşluk ekle */
+}
+
+.social-icons a {
+  margin: 0 10px; /* İkonlar arası boşluk */
+}
+
+.footer-bottom {
+  text-align: center; /* Alt metni ortala */
+  margin-top: 20px; /* Üstten boşluk ekle */
+}
+
+
+
+}
+
+
+
+
+
+
+
+  
+
