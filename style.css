@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Delius&family=Molle&family=Pacifico&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     background-color: transparent; /* Body içeriği şeffaf */
     min-height: 100vh; /* Tüm ekranı kapsar */
     background-color: #FBFBFB;
+    scroll-behavior: smooth;
+    
 }
 
 /* Navbar */
@@ -15,9 +17,7 @@ body {
     margin-right: 30px;
     position: sticky;
     top: 0;
-    z-index: 1000; /* Navbarın diğer elemanların üzerinde görünmesi için */
-    
-    
+    z-index: 1000; /* Diğer öğelerin üstünde kalması için */
 }
 
 .navbar {
@@ -33,18 +33,21 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    
 }
 
 .menu li {
-    margin: 0 10px;
+    margin: 0 10px;  
 }
 
 .menu-link {
     text-decoration: none; /* Mavi çizgiyi kaldırır */
     color: #000; /* Yazı rengini siyah yapar */
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
+    font-size: 19px ;
+    font-family: "Parkinsans", sans-serif;
+}
+
+.menu-link:hover{
+  border-bottom: #BF302E 2px solid;
 }
 
 /* Logo */
@@ -97,15 +100,19 @@ body {
     text-align: center;
     font-size: 50px;
     padding: 10px;
-    border-bottom: #BF302E 10px solid;
-    font-family: 'Poppins', sans-serif;
+    border-bottom: #BF302E 10px solid; 
+    font-family: "Parkinsans", sans-serif;
+    margin-left: 50px;
+    
 }
 
 .metin {
-    font-size: 30px;
-    margin-top: 50px;
+    font-size: 23px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-left: 50px;
     padding: 10px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Dosis", sans-serif;
 }
 
 /* Video */
@@ -120,7 +127,7 @@ body {
 /* Sol taraftaki yazı */
 .text-content {
     flex: 1;
-    font-family: Arial, sans-serif;
+    font-family: "Dosis", sans-serif;
     font-size: 16px;
     color: #333;
     padding: 10px;
@@ -170,6 +177,9 @@ body {
     text-align: center;
     font-size: 60px;
     padding: 10px;
+    font-family: "Parkinsans", sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
     
     
    
@@ -178,7 +188,7 @@ body {
 .loader {
     height: 25px;
     aspect-ratio: 5;
-    --c: #B83229 90deg, #0000 0; /* Renk güncellendi */
+    --c: #BF302E 90deg, #0000 0; /* Renk güncellendi */
     background: 
       conic-gradient(from 135deg at top, var(--c)),
       conic-gradient(from -45deg at bottom, var(--c)) 12.5% 100%;
@@ -197,7 +207,7 @@ body {
   
 /* locacion */
 .poke-container {
-    margin-top: 50px;
+    margin-top: 70px;
     display: flex;
     border-radius: 12px;
     position: relative;
@@ -216,12 +226,12 @@ body {
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    background-color: #B83229; 
-    margin-top: 40px;
+    background-color: #BF302E; 
+    margin-top: 70px;
     margin-left: 500px;
     padding: 25px;
     box-shadow: #000000 0px 0px 5px;
-    color: white;
+    color: #FBFBFB;
     font-family: 'Poppins', sans-serif;
     
   }
@@ -277,7 +287,7 @@ body {
   align-items: center;
   overflow: hidden;
   padding: 30px;
-  margin-top: 100px;
+  margin-top: 70px;
   margin-bottom: 50px;
 
 }
@@ -287,18 +297,18 @@ body {
   font-weight: bold;
   margin-bottom: 20px;
   color: #333; /* Yazı rengi */
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .instagram-link {
   margin-bottom: 50px;
   font-size: 40px; /* Daha büyük yazı */
-  color: #0077b6; /* Instagram link rengi */
-  text-decoration: none;
+  color: #BF302E; /* Instagram link rengi */
+  
 }
 
-.instagram-link:hover {
-  color: #005f8a; /* Hover efekti */
-}
+
 
 .gallery {
   display: flex;
@@ -328,11 +338,12 @@ body {
 
 /* Footer Ana Yapısı */
 .footer {
-  background-color: #B83229; /* Kırmızı arka plan */
-  color: white; /* Beyaz metin */
+  background-color: #BF302E; /* Kırmızı arka plan */
+  color: #FBFBFB; /* Beyaz metin */
   padding: 30px 0;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family:   "Parkinsans", sans-serif;
+  margin-top: 70px;
 }
 
 .footer-container {
@@ -353,8 +364,8 @@ body {
 .footer-title {
   font-size: 1.8rem;
   margin-bottom: 15px;
-  color: white;
-  border-bottom: 2px solid white;
+  color: #FBFBFB;
+  border-bottom: 2px solid #FBFBFB;
   display: inline-block;
   padding-bottom: 5px;
 }
@@ -362,11 +373,11 @@ body {
 /* Metin ve Bağlantılar */
 .contact-section p, .jobs-section p {
   margin: 10px 0;
-  color: white;
+  color: #FBFBFB;
 }
 
 .contact-section a, .jobs-section a {
-  color: white;
+  color: #FBFBFB;
   text-decoration: none;
   font-weight: bold;
 }
@@ -382,7 +393,7 @@ body {
 
 .social-icons a {
   margin: 0 10px;
-  color: white;
+  color: #FBFBFB;
   font-size: 1.5rem;
   text-decoration: none;
 }
@@ -400,12 +411,12 @@ body {
   
 
 .custom-button {
-  background-color: white; /* Kırmızı arka plan */
-  color: #B83229; /* Beyaz metin */
+  background-color: #FBFBFB; /* Kırmızı arka plan */
+  color: #BF302E; /* Beyaz metin */
   padding: 10px 20px; /* İç boşluk */
   font-size: 1rem; /* Yazı boyutu */
   font-weight: bold; /* Kalın yazı */
-  border: 2px solid #B83229; /* Çerçeve rengi */
+  border: 2px solid #BF302E; /* Çerçeve rengi */
   border-radius: 5px; /* Köşeleri yuvarla */
   cursor: pointer; /* Tıklanabilir imleç */
   transition: all 0.3s ease; /* Yumuşak geçiş efekti */
@@ -413,14 +424,110 @@ body {
 
 /* Hover (Üzerine gelince) */
 .custom-button:hover {
-  background-color: white; /* Beyaz arka plan */
-  color: #B83229; /* Kırmızı metin */
-  border-color: #B83229; /* Çerçeve kırmızı kalır */
+  background-color: #FBFBFB; /* Beyaz arka plan */
+  color: #BF302E; /* Kırmızı metin */
+  border-color: #BF302E; /* Çerçeve kırmızı kalır */
 }
 
 /* Active (Tıklanınca) */
 .custom-button:active {
   transform: scale(0.95); /* Hafif küçült */
   background-color: #8A2520; /* Daha koyu kırmızı */
-  color: white; /* Beyaz metin */
+  color: #FBFBFB; /* Beyaz metin */
+}
+
+
+/* span */
+
+#alt-kisim {
+  scroll-margin-top: 120px; /* Üst boşluk */
+}
+
+
+#alt-kisim2 {
+  scroll-margin-top: 200px; /* Üst boşluk */
+}
+
+
+/* burer */
+
+.carousel5 {
+  display: flex; /* Yan yana iki kutu oluştur */
+  justify-content: space-between; /* İki kutu arasında eşit boşluk */
+  align-items: center; /* Dikeyde ortala */
+  min-height: 50vh; /* Daha küçük bir yükseklik */
+  margin: 0; /* Kenarlardan boşluğu kaldır */
+  padding: 0; /* İç boşlukları kaldır */
+  overflow: hidden; /* İçe aktarımı kaldır */
+  background-color: #BF302E; /* Kartın arka plan rengi */
+  margin-top: 70px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#photo-gallery {
+  position: relative;
+  width: 50%; /* Sol taraf genişliği (yarısı) */
+  height: 400px; /* Galeri yüksekliğini azalt */
+  margin-left: 150px;
+  display: flex;
+  justify-content: center; /* Görselleri yatayda ortala */
+  align-items: center; /* Görselleri dikeyde ortala */
+}
+
+.photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Fotoğraf başlangıçta görünmez */
+}
+
+.photo img {
+  max-width: 100%; /* Görseli kapsayıcı genişliğe sığdır */
+  max-height: 100%; /* Görseli kapsayıcı yüksekliğe sığdır */
+  object-fit: contain; /* Görseli kesmeden uygun şekilde göster */
+}
+
+.photo.active {
+  opacity: 1; /* Aktif fotoğrafı görünür yap */
+}
+
+.card {
+  background-color: #8A2520;
+  padding: 30px;
+  color: #FBFBFB;
+  font-family: "Parkinsans", sans-serif;
+  font-size: 18px;
+  width: 80%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  transform: translateX(100%); /* Kart başlangıçta görünmez */
+  opacity: 0; /* Görünmez başlangıç */
+  transition: transform 1s ease-out, opacity 1s ease-out; /* Yavaşça hareket ve görünürlük */
+}
+
+.card.show {
+  transform: translateX(0); /* Sağdan merkeze gelsin */
+  opacity: 1; /* Görünür yap */
+}
+
+.card h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  border-bottom: #FBFBFB 3px solid;
+  color: #FBFBFB;
+  font-family: "Parkinsans", sans-serif;
+}
+
+.card p {
+  font-size: 20px;
+  color: #FBFBFB;
+  font-family: "Dosis", sans-serif;
 }

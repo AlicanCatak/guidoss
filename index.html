@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Molle&family=Pacifico&family=Parkinsans:wght@300..800&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Dosis:wght@200..800&family=Molle&family=Pacifico&family=Parkinsans:wght@300..800&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <title>Guidos Teşvikiye</title>
 </head>
 <body>
@@ -15,8 +24,8 @@
             <!-- Sol Taraf: Menü -->
             <ul class="menu">
                 <li><a href="#" class="menu-link">Ana Sayfa</a></li>
-                <li><a href="#" class="menu-link">Hakkımızda</a></li>
-                <li><a href="#" class="menu-link">İletişim</a></li>
+                <li><a href="#alt-kisim" class="menu-link">Hakkımızda</a></li>
+                <li><a href="#alt-kisim2" class="menu-link">İletişim</a></li>
                 <li><a href="#" class="menu-link">Menu</a></li>
             </ul>
     
@@ -27,13 +36,14 @@
     
             <!-- Sağ Taraf: İkonlar -->
             <div class="icons">
-                <i class="fa-regular fa-comment"></i>
-                <i class="fa-brands fa-instagram"></i>
+                <a href="https://www.google.com.tr/search?sa=X&sca_esv=3133dcedd35e4ac7&tbm=lcl&sxsrf=ADLYWIJVIzmcHStbajDKjyn3mLeX31cBRQ:1732663623221&q=Guido%E2%80%99s+Te%C5%9Fvikiye+Yorumlar&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2MTIzMDGyNDI1NjIyMTM1NzUz28DI-IpR1r00MyX_UcPMYoWQ1KPzyzKzMytTFSLzi0pzcxKLFrHilwcAuHNFB1oAAAA&rldimm=4260429253224657566&hl=tr-TR&ved=2ahUKEwiT0Jv-kvuJAxXtQvEDHVJoBI8Q9fQKegQINxAF&biw=1920&bih=911&dpr=1#lkt=LocalPoiReviews"><i class="fa-regular fa-comment"></i></a>
+                <a href="https://www.instagram.com/guidostesvikiye/"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </nav>
+        
     </div>
     <!-- NAVBAR END -->
-
+   
     <!-- CAROUSEL -->
     <div class="carousel">
         <div class="carousel-inner">
@@ -42,14 +52,18 @@
                     <source src="./img/kapak.mp4" type="video/mp4">
                 </video>
             </div>
+            
         </div>
     </div>
+    
     <!-- CAROUSEL END -->
       <!-- CAROUSEL END -->
        <!-- CONTENT -->
+       <span id="alt-kisim"></span>
        <div class="carousel">
+        
         <div class="content">
-            <div class="hw">
+            <div class="hw" >
                 <img src="./img/content.jpg" alt="content" class="image">
             </div>
             <div class="text">
@@ -80,12 +94,58 @@
         </div>
     </div>
 </div>
+  <!-- CONTENT END -->
+<!-- burger -->
 
-    <!-- CONTENT END -->
+<div class="carousel5">
+    <!-- Sol tarafta görseller -->
+    <div id="photo-gallery">
+      <div class="photo" id="photo1">
+        <img src="./img/s1.png" alt="Fotoğraf 1">
+      </div>
+      <div class="photo" id="photo2">
+        <img src="./img/s2.png" alt="Fotoğraf 2">
+      </div>
+      <div class="photo" id="photo3">
+        <img src="./img/s3.png" alt="Fotoğraf 3">
+      </div>
+      <div class="photo" id="photo4">
+        <img src="./img/s4.png" alt="Fotoğraf 4">
+      </div>
+      <div class="photo" id="photo5">
+        <img src="./img/s5.png" alt="Fotoğraf 5">
+      </div>
+      <div class="photo" id="photo6">
+        <img src="./img/s6.png" alt="Fotoğraf 6">
+      </div>
+      <div class="photo" id="photo7">
+        <img src="./img/s7.png" alt="Fotoğraf 7">
+      </div>
+      <div class="photo" id="photo8">
+        <img src="./img/s8.png" alt="Fotoğraf 8">
+      </div>
+      <div class="photo" id="photo9">
+        <img src="./img/s9.png" alt="Fotoğraf 9">
+      </div>
+    </div>
+  
+    <!-- Sağ tarafta kart -->
+    <div class="card">
+        <h1>Gastronomi Cenneti</h1>
+        <p class="metin">
+            İtalya’nın geleneksel tariflerini modern bir yorumla sunuyor. Özenle hazırlanan taptaze sandviçler, özel soslar ve eşsiz malzemelerle damaklarınızı şımartın. Şehirdeki gurme tutkunlarının favori durağını keşfedin!
+        </p>
+      </div>
+  </div>
+  
+
+
+<!-- burger end -->
+   
     <!-- COVER -->
     <div class="carousel">
         <h1 class="hakkımızda2">Lokasyon! 📍</h1>
-        
+        <span id="alt-kisim2"></span>
         <div class="poke-container">
             <div class="poke-image">
               <img src="./img/merkez.jpg" alt="Poke Bowlz Store">
@@ -100,7 +160,7 @@
               </div>
               <div class="phone">
                 <h1>Telefon</h1>
-                <p>949-709-1561</p>
+                <p>(0212) 233 54 25</p>
               </div>
             </div>
             <div class="poke-map">
