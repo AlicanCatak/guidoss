@@ -572,7 +572,7 @@ body {
 }
 
 /* Mobil Görünüm için Hamburger */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .menu {
       display: none;
   }
@@ -629,6 +629,22 @@ body {
 .carousel .text-content {
     text-align: center;
     
+}
+
+.hakkımızda{
+  font-size: 25px;
+  padding: 10px;
+}
+
+.hakkımızda2{
+  font-size: 25px;
+  padding: 10px;
+}
+
+
+.metin{
+  font-size: 15px;
+  padding: 10px;
 }
 
 
